@@ -1,0 +1,19 @@
+server:
+  port: ${vcap.application.port:9444}
+
+spring:
+  application:
+    name: api-config-server
+  profiles:
+    active: local
+    include: native
+
+# logging information
+logging:
+  level:
+    root: INFO
+    com.mankali.api.config.server: INFO
+    org.springframework.web: INFO
+
+
+
